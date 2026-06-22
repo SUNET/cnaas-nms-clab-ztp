@@ -100,7 +100,7 @@ sudo ip route add 10.100.3.101/32 via 10.100.2.101
 sudo ip route add 10.100.3.102/32 via 10.100.2.102
 ```
 
-> **Note:** `sudo containerlab destroy` removes these routes.
+> **Note:** `containerlab destroy -c` removes these routes.
 > `sudo containerlab deploy --reconfigure` preserves them.
 
 ## Usage
@@ -120,5 +120,5 @@ telnet <eosaccess-mgmt-ip> 5000
 ### Tear down
 
 ```bash
-sudo containerlab destroy
+containerlab destroy -c
 ```
